@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons2/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Portfolio</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Splash screen -->
+    <div id="splash-screen">
+        <h1>Elegant Works !</h1>
+    </div>
+
+
+
+    <section id="introduction" class="container m-5 justify-content-between">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="section-title">Intro</h2>
+                <p class="intro-text">Experienced professional with expertise in Microsoft Excel, Microsoft Word, web
+                    frontend development, and a disciplined work ethic. Skilled in advanced data analysis, automation,
+                    and creating visually appealing reports using Excel. Proficient in creating professional documents
+                    and presentations with precision using Word. Solid understanding of HTML, CSS, and JavaScript for
+                    developing user-friendly web interfaces. Known for disciplined work approach, attention to detail,
+                    and ability to meet deadlines. Adaptable and quick learner, continuously enhancing skills to stay
+                    ahead of industry trends. Seeking a challenging opportunity to leverage skills and make a positive
+                    impact within your organization.</p>
+
+                <section id="contact" class="container ">
+
+                    <div class="row">
+                        <div class="col text-center ">
+                            <ul class="justify-content-between mt-5">
+                                <a href="https://www.linkedin.com/" target="_blank"><i
+                                        class="fab fa-linkedin fa-lg"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram fa-lg"></i></a>
+                                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="mailto:elyasmoel547@gmail.com"><i class="far fa-envelope fa-lg"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <span>Contact: 0742739686</span>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <ul class="justify-content-between m-3" id="works">
+                        
+                            <button type="button" data-toggle="modal" data-bs-target="#worksModal">Work Samples</button>
+    
+                            <a data-toggle="modal" href="#educationModal">Education</a> 
+    
+                       </ul>
+                    </div>
+
+                </section>  
+            </div>
+            <div class="col-lg-4">
+                <img src="assets\images\suit.jpg" alt="Your Photo" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <!--Models-->
+
+    <div class="modal fade" id="worksModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Work Samples</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="./assets/images/site 1.png" alt="">
+                        </div>
+                        <div class="card">hello world</div>
+                        <div class="card">hello world</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="educationModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Education</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="work-samples" class="container m-5">
+        <h2 class="section-title">Work Samples</h2>
+
+        <!-- Carousel Slide -->
+        <div class="row ">
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="link-to-carousel-project.html" target="_blank">
+                                <img src="assets/images/site 3.png" class="d-block w-100 img-fluid"
+                                    alt="Carousel Slide 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a href="link-to-carousel-project.html" target="_blank">
+                                <img src="assets/images/site 1.png" class="d-block w-100 img-fluid"
+                                    alt="Carousel Slide 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="link-to-carousel-project.html" target="_blank">
+                                <img src="assets/images/site 2.png" class="d-block w-100 img-fluid"
+                                    alt="Carousel Slide 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h3>Categories</h3>
+                <div class="btn-group" role="group">
+                    <a href="sport.html" class="btn btn-light">Sport</a>
+                    <a href="exercise.html" class="btn btn-light">Exercise</a>
+                    <a href="business.html" class="btn btn-light">Business</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Finished Projects -->
+    <section id="finished" class="m-5">
+        <div class="row mt-4">
+            <div class="col">
+                <h3>Finished Projects</h3>
+                <div class="card-deck">
+                    <div class="card bg-dark">
+                        <img src="assets/images/site 3.png" class="card-img-left" alt="Project 1 Thumbnail">
+                        <div class="card-body position-absolute bottom-0">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Brief description of Project 1.</p>
+                            <a href="link-to-project-1.html" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card bg-dark ">
+                        <img src="assets/images/site 2.png" class="img-fluid" alt="Project 2 Thumbnail">
+                        <div class="card-body position-absolute bottom-0">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Brief description of Project 2.</p>
+                            <a href="link-to-project-2.html" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="curriculum-vitae" class="container m-5">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <h5>University Of Dodoma(UDOM), Bsc. HIS</h5>
+                        <p class="text-muted">2023</p>
+                        <p>Description of your education, courses, and achievements.</p>
+                    </li>
+                    <li>
+                        <h5>Moshi Technical Secondary School</h5>
+                        <p class="text-muted">2020</p>
+                        <p>Description of your high school education and achievements.</p>
+                    </li>
+                    <li>
+                        <h5>Morning Star Secondary School</h5>
+                        <p class="text-muted">2018</p>
+                        <p>Description of your high school education and achievements.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <h5>Dodoma Regional Referral Hospital</h5>
+                        <p class="text-muted">Data Entry Assistant</p>
+                        <p class="text-muted">June-2022, September-2022</p>
+                        <ul>
+                            <li>Description of your responsibilities and achievements.</li>
+                            <li>Additional details about your work experience.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>Freelance.com</h5>
+                        <p class="text-muted">FrontEnd Developer</p>
+                        <p class="text-muted">current</p>
+                        <ul>
+                            <li>Description of your responsibilities and achievements.</li>
+                            <li>Additional details about your work experience.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Word</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Data Analysis</li>
+                    <li>Automation</li>
+                    <li>Attention to Detail</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <a href="#top" class="btn btn-primary back-to-top">Back to Top</a>
+
+
+                        
+</body>
+<script src="./assets/script.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/jquery/jquery.js"></script>
+<!--<script src="assets\js\portfolio.js"></script> -->
+
+</html>

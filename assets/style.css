@@ -1,0 +1,522 @@
+
+/* CSS styling for splash screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    animation: fade-in-out 2s forwards;
+    color: orangered;
+    font-family:chiller;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+/* CSS animation for fade in/out */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+/* CSS animation for section transitions */
+.section {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+body {
+    background: #000000;
+    cursor:pointer;
+    background-color: rgb(40, 26, 17);
+}
+#introduction {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-color: rgb(30, 20, 14);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom:2px solid orangered;
+    border-bottom-right-radius: 50px;
+
+}
+
+#introduction .section-title {
+    color:orangered;
+    font-weight: 500;
+    font-family:Bodoni MT Black;
+}
+#introduction .section-title:hover {
+    transition: all ease-in 0.3s;
+    transform: translateX(4px);
+}
+ #introduction .intro-text {
+    color:rgba(245, 245, 245, 0.836);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    border-bottom:2px solid orangered;
+    border-bottom-right-radius: 50px;
+    border-top: 2px solid orangered;
+    border-top-right-radius: 50px;
+ }
+ #introduction .intro-text:hover {
+    transition: all ease-in-out 0.3s;
+    transform:translateX(5px);
+    text-shadow: orangered;
+    box-shadow: orangered;
+ }
+
+ #contact a i{
+    color: orangered;
+    margin: 5px;
+    text-shadow: 1px 1px 1px orangered, 1px 1px 1px red;
+    
+ }
+ #contact a i:hover {
+    color: orange;
+    transition: all ease-in-out 0.9s;
+    transform:rotate(360deg);  
+    text-shadow: 2px 2px 3px orangered, 2px 2px 3px red;
+ }
+ #contact span{
+    border-bottom: 2px solid orangered;
+    border-bottom-right-radius: 12px;
+    color: orangered;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 6px;
+ }
+ #contact span:hover {
+    transition: all ease-in-out 0.3s;
+    transform:translateX(5px);
+    background-color: rgba(255, 69, 0, 0.2);
+ }
+
+ #contact ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+ }
+
+#works a{
+   color: whitesmoke;
+   text-decoration: none;
+   border-color: orangered;
+   border-width: 2px 2px 0px 2px;
+   border-style: inset;
+   border-radius: 12px;
+   justify-items: center;
+   text-shadow: 2px 2px 3px orangered, 2px 2px 3px red;
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: rgba(255, 69, 0, 0.15);
+   transition: all 0.3s;
+}
+
+#works button {
+   color: whitesmoke;
+   border-color: orangered;
+   border-width: 2px 2px 0px 2px;
+   border-style: inset;
+   border-radius: 12px;
+   text-shadow: 2px 2px 3px orangered, 2px 2px 3px red;
+   padding: 10px 20px;
+   background-color: rgba(255, 69, 0, 0.15);
+   transition: all 0.3s;
+   font-weight: 600;
+}
+
+#works button:hover {
+   transform: translateX(5px);
+   background-color: rgba(255, 69, 0, 0.3);
+}
+
+#contact #works a:hover{
+   transition: all ease-in-out 0.3s;
+   transform:translateX(5px);
+   background-color: rgba(255, 69, 0, 0.3);
+}
+
+ #introduction img {
+    border-right: 12px solid orangered;
+    box-shadow:  2px 2px 3px red, 2px 2px 3px orangered;
+    background-size: cover;
+ }
+ #introduction img:hover {
+    transition: all ease-in-out 0.4s;
+    transform: translateX(3px);
+ }
+
+ #work-samples h2{
+    color: orangered;
+    font-family:Bodoni MT Black;
+ }
+ #work-samples h2:hover{
+    transition: all ease-in-out 0.3s;
+    transform:translateX(5px);
+    text-shadow: orangered;
+    box-shadow: orangered;
+ }
+
+ #work-samples {
+    border-bottom:2px solid orangered;
+    border-bottom-right-radius: 30px;
+    border-top: 2px solid orangered;
+    border-top-right-radius: 50px;
+    background: rgb(30, 20, 14);
+    height:fit-content;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+ }
+
+ #work-samples .row .col #carouselExampleControls .carousel-inner img {
+    height: 300px;
+    background-size: contain;
+    border-radius: 50px;
+ }
+
+ /*categories*/
+ #categories {
+   background-color: rgb(30, 20, 14);
+   border: 2px solid orangered;
+   border-radius: 12px;
+   padding: 25px;
+   margin: 20px auto;
+ }
+ #categories h3{
+   color: orangered;
+   font-family: Bodoni MT Black;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 12px;
+   margin-bottom: 20px;
+   font-size: 1.8rem;
+ }
+ #categories h3:hover{
+   transition: all 0.3s;
+   transform: translateX(10px);
+ }
+ #categories .btn-group a{
+   justify-items: center;
+   color: orangered;
+   background: rgba(0, 0, 0, 0.5);
+   border-color: orangered;
+   font-family: Bodoni MT Black;
+   font-weight: 600;
+   padding: 8px 20px;
+   margin: 0 8px;
+   transition: all 0.3s;
+ }
+ #categories .btn-group a:hover{
+   background-color: orangered;
+   color: #000000;
+   font-weight: 700;
+   transform: translateY(-3px);
+ }
+
+ /*finished projects*/
+ #finished {
+   background-color: rgb(30, 20, 14);
+   border: 2px solid orangered;
+   border-radius: 12px;
+   padding: 25px;
+ }
+ #finished h3{
+   color: orangered;
+   font-family: Bodoni MT Black;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 12px;
+   margin-bottom: 20px;
+   font-size: 1.8rem;
+ }
+ #finished h3:hover{
+   transition: all 0.3s;
+   transform: translateX(10px);
+ }
+ #finished .card-deck {
+   gap: 20px;
+ }
+ #finished .card {
+   background-color: rgba(0, 0, 0, 0.8);
+   border: 1px solid orangered;
+   border-radius: 8px;
+   overflow: hidden;
+   transition: all 0.3s;
+ }
+ #finished .card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+ }
+ #finished .card img {
+   height: 250px;
+   object-fit: cover;
+   border-bottom: 2px solid orangered;
+ }
+ #finished .card-body {
+   background-color: rgba(30, 20, 14, 0.95);
+   padding: 15px;
+ }
+ #finished .card-title {
+   color: #ffffff;
+   font-weight: 700;
+   margin-bottom: 8px;
+ }
+ #finished .card-text {
+   color: rgba(245, 245, 245, 0.8);
+   font-size: 0.9rem;
+   margin-bottom: 10px;
+ }
+ #finished .btn-primary {
+   background-color: orangered;
+   border-color: orangered;
+   color: #000000;
+   font-weight: 600;
+ }
+ #finished .btn-primary:hover {
+   background-color: orange;
+   border-color: orange;
+   color: #000000;
+ }
+
+ /*cv*/
+ #curriculum-vitae {
+   background-color: rgb(30, 20, 14);
+   border: 2px solid orangered;
+   border-radius: 12px;
+   padding: 20px;
+ }
+ #curriculum-vitae h3{
+   font-family: Bodoni MT Black;
+   color: orangered;
+   font-weight: 300;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 10px;
+ }
+ #curriculum-vitae h5{
+   color: #ffffff;
+   font-weight: 600;
+   margin-top: 12px;
+ }
+ #curriculum-vitae p{
+   color: rgba(245, 245, 245, 0.8);
+   margin: 5px 0;
+   font-size: 0.95rem;
+ }
+ #curriculum-vitae li {
+   color: rgba(245, 245, 245, 0.8);
+   margin-bottom: 8px;
+   list-style-position: inside;
+ }
+ #curriculum-vitae ul {
+   padding-left: 0;
+   margin-bottom: 15px;
+ }
+ #curriculum-vitae .section-title {
+   font-family: Bodoni MT Black;
+   color: orangered;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+ }
+ #curriculum-vitae .section-title:hover {
+   transition: all 0.3s;
+   transform: translateX(10px);
+ }
+ #curriculum-vitae .skills-list {
+   columns: 2;
+   column-gap: 20px;
+ }
+ #curriculum-vitae .skills-list li {
+   break-inside: avoid;
+   padding: 8px;
+   background-color: rgba(255, 69, 0, 0.1);
+   border-left: 3px solid orangered;
+   margin-bottom: 8px;
+   border-radius: 4px;
+ }
+
+ /*testimonials*/
+ #testimonials {
+   background-color: rgb(30, 20, 14);
+   border: 2px solid orangered;
+   border-radius: 12px;
+   padding: 20px;
+   margin: 20px auto;
+ }
+ #testimonials .section-title {
+   font-family: Bodoni MT Black;
+   color: orangered;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 10px;
+   margin-bottom: 25px;
+   font-size: 2rem;
+ }
+ #testimonials .section-title:hover {
+   transition: all 0.3s;
+   transform: translateX(10px);
+ }
+ #testimonials h3 {
+   font-family: Bodoni MT Black;
+   color: orangered;
+   margin-top: 20px;
+   margin-bottom: 15px;
+   border-bottom: 2px solid orangered;
+   padding-bottom: 8px;
+ }
+ #testimonials h3:hover {
+   transition: all 0.3s;
+   transform: translateX(8px);
+ }
+ .testimonial {
+   background-color: rgba(255, 69, 0, 0.08);
+   border-left: 4px solid orangered;
+   padding: 15px;
+   margin: 15px 0;
+   border-radius: 6px;
+   font-style: italic;
+ }
+ .testimonial p {
+   color: rgba(245, 245, 245, 0.85);
+   font-size: 1rem;
+   margin: 10px 0;
+   line-height: 1.5;
+ }
+ .testimonial footer {
+   color: orangered;
+   font-weight: 600;
+   margin-top: 10px;
+   text-align: right;
+   font-style: normal;
+ }
+ #testimonials .carousel-inner {
+   border: 1px solid orangered;
+   border-radius: 6px;
+   padding: 15px;
+ }
+ #testimonials .carousel-control-prev-icon,
+ #testimonials .carousel-control-next-icon {
+   background-color: orangered;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+ }
+ #testimonials .carousel-caption {
+   background-color: rgba(0, 0, 0, 0.7);
+   border-radius: 6px;
+   padding: 15px;
+ }
+ #testimonials .carousel-caption h4 {
+   color: orangered;
+   font-weight: 700;
+ }
+ #testimonials .carousel-caption p {
+   color: rgba(245, 245, 245, 0.9);
+ }
+
+ /*modals*/
+ .modal-content {
+   background-color: rgb(30, 20, 14);
+   border: 2px solid orangered;
+   border-radius: 12px;
+ }
+ .modal-header {
+   background-color: rgba(255, 69, 0, 0.1);
+   border-bottom: 2px solid orangered;
+   border-radius: 10px 10px 0 0;
+ }
+ .modal-title {
+   color: orangered;
+   font-family: Bodoni MT Black;
+   font-weight: 700;
+   font-size: 1.5rem;
+ }
+ .modal-header .close {
+   color: orangered;
+   opacity: 0.7;
+ }
+ .modal-header .close:hover {
+   color: orange;
+   opacity: 1;
+ }
+ .modal-body {
+   background-color: rgb(30, 20, 14);
+   color: rgba(245, 245, 245, 0.85);
+   padding: 20px;
+ }
+ .modal .card {
+   background-color: rgba(0, 0, 0, 0.6);
+   border: 1px solid orangered;
+   border-radius: 8px;
+   color: rgba(245, 245, 245, 0.85);
+ }
+ .modal .card img {
+   border-bottom: 1px solid orangered;
+   border-radius: 7px 7px 0 0;
+ }
+
+ /*branding statements*/
+ #branding-statements-carousel {
+   margin-top: 30px;
+ }
+ #branding-statements-carousel h4 {
+   color: orangered;
+   font-weight: 700;
+   font-family: Bodoni MT Black;
+   font-size: 1.5rem;
+ }
+ #branding-statements-carousel p {
+   color: rgba(245, 245, 245, 0.9);
+   font-size: 1.1rem;
+ }
+ .carousel-item {
+   min-height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover;
+   background-position: center;
+   border-radius: 12px;
+   border: 2px solid orangered;
+ }
+
+ /*back to top button*/
+ .back-to-top {
+   background-color: orangered;
+   border-color: orangered;
+   color: #000000;
+   font-weight: 700;
+   padding: 12px 25px;
+   margin-top: 20px;
+ }
+ .back-to-top:hover {
+   background-color: orange;
+   border-color: orange;
+   color: #000000;
+   transform: translateY(-3px);
+   transition: all 0.3s;
+ }
+ 
